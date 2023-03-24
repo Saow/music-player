@@ -1,0 +1,165 @@
+/* General styles */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #282828;
+	font-family: Arial, sans-serif;
+}
+
+/* Player styles */
+
+#player {
+	background-color: #181818;
+	box-shadow: 10px 10px 70px 10px rgba(9, 53, 240, 0.2);
+    border: 2px solid rgb(75, 31, 236);
+	border-radius: 10px;
+	padding: 20px;
+	width: 400px;
+	margin: 100px auto;
+}
+/* Make it responsive with media  */
+@media screen and (max-width: 500px)(min-width: 800px){
+    #player{
+        width: 100%;
+        margin: 100px auto;
+        border-radius: 10px;
+
+    }
+}
+#player-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+#player-left {
+	display: flex;
+	align-items: center;
+}
+
+#song-details {
+	margin-left: 20px;
+}
+
+#song-title {
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+#artist-name {
+	font-size: 14px;
+	color: #b3b3b3;
+}
+
+#player-right {
+	display: flex;
+	align-items: center;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+	color: #b3b3b3;
+}
+
+button:hover {
+	color: #fff;
+}
+
+#heart-icon {
+	margin-right: 20px;
+}
+
+#playback-speed {
+	margin-right: 20px;
+}
+
+#settings {
+	font-size: 18px;
+}
+
+#player-bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#player-controls {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+#playBtn {
+	font-size: 24px;
+    padding: 10px;
+}    
+img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 15%;
+    margin: 0 10px;
+    border: px solid white;
+}
+
+#playBtn:hover {
+    color: #fff;
+}
+#playBtn.active {
+    color: #1068ec;
+}
+#current-time, #duration{
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-right: 10px;
+}
+#progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #282828;
+    border-radius: 5px;
+    position: relative;
+
+}
+h1{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+    /* Cool font from google fonts*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#playBtn {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #282828;
+    color: #b3b3b3;
+    margin: 0 10px;
+}
+#nextBtn, #prevBtn{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #282828;
+    color: #b3b3b3;
+    margin: 0 10px;
+}
+#nextBtn, #prevBtn:hover{
+    color: #fff;
+}
